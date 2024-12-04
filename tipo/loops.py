@@ -14,4 +14,11 @@ while i < len(numbers):
     print(i)
     i += 1
 
+numbers = range(5, 15)
+
+for x in numbers:
+    print(x)
+    
+    
+
 

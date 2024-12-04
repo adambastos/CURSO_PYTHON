@@ -1,6 +1,4 @@
+preco = 100
+print(f"O preço é: {preco:.2f}")
 
-nasc = int(input("Digite seu ano de nascimento: "))
-idade = 2024 - nasc
-
-print("Você tem " + str(idade) + " anos") 
 
