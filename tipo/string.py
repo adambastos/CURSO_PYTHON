@@ -23,4 +23,8 @@ print(name.capitalize()) #Deixa a primeira letra da palavra maiúscula
 print(name.casefold()) #Deixa todas as letras minúsculas
 print(name.count('a')) #Vai contat quantos 'a' tem dentro da String
 
+preco = 100
+print(f"O preço é: {preco:.2f}") #Adiciona duas casas decimais após o ponto 100.00
+
+
 
