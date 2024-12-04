@@ -5,3 +5,5 @@ if (not cpf.isnumeric() or len(cpf) != 11):
     print("Digite seu CPF corretamente e apenas números.")
 else:
     print("Tudo certo com seu CPF.")
+
+print(cpf.isnumeric()) #Retorna um boolean se é numérico ou não

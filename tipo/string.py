@@ -26,5 +26,11 @@ print(name.count('a')) #Vai contat quantos 'a' tem dentro da String
 preco = 100
 print(f"O preço é: {preco:.2f}") #Adiciona duas casas decimais após o ponto 100.00
 
+#Função para arredondar números
+imposto = 0.15758
+preco = 100
+valor_imposto = round(preco * imposto, 1)
+print('Imposto sobre o preço é de {}'.format(valor_imposto))
+
 
 
