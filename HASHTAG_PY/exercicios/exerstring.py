@@ -7,3 +7,4 @@ else:
     print("Tudo certo com seu CPF.")
 
 print(cpf.isnumeric()) #Retorna um boolean se é numérico ou não
+
