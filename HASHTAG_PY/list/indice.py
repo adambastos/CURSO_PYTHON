@@ -3,14 +3,14 @@
 produtos = ['TV', 'CELULAR', 'TABLET', 'MOUSE', 'TECLADO', 'GELADEIRA', 'FORNO']
 estoque = [100, 150, 100, 120, 70, 90, 80]
 
-pos = produtos.index('GELADEIRA')
-qnt_estoque = estoque[pos]
-print(pos)
-print(qnt_estoque)
-
-
 nomeprod = input("Insira o nome do produto: ")
+
+pos = produtos.index(nomeprod)
+qnt_estoque = estoque[pos]
+
 if (not nomeprod in produtos):
-    print("Este produto não existe na lista.")
+    print("Este produto não consta na lista.")
 elif (nomeprod in produtos):
-    print("{} conta na lista de produtos." .format(nomeprod))
+    print("{} conta na lista de produtos e possui {} unidades em estoque." .format(nomeprod, qnt_estoque))
+
+
