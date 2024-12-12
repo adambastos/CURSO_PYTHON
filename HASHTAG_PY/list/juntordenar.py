@@ -11,3 +11,5 @@ print("\n".join(map(str, lista1))) #Imprimindo itens da lista sem os colchetes e
 
 
 
+
+
