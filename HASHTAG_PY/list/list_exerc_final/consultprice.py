@@ -12,6 +12,8 @@ precos = [1500, 1000, 800, 2000]
 prod = input('Digite o nome de um produto: ')
 
 if prod in produtos:
-    pos = produtos.index(prod)
+    pos = produtos.index(prod) #A variável pos vai armazenar > O índice (index) do (prod) digitado dentro de produtos 
     i_price = precos[pos]
     print('O produto {} custa R$:{}.' .format(prod, i_price))
+else:
+    print('Produto não encontrado na lista, por favor tente novamente.')
