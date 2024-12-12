@@ -4,9 +4,9 @@ qnt_bt_meta = 0
 
 for num in valores:
     if num > 1000:
-        qnt_bt_meta += 1
+        qnt_bt_meta += 1 #Sempre que o contador encontrar um que bateu a meta, ele vai somar mais um
 
 print(qnt_bt_meta)
 
         
-#print('{} Não é maior que 1000' .format(num))
+
