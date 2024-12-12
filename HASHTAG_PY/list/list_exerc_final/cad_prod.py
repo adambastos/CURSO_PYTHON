@@ -8,7 +8,7 @@
 
 produtos = ["celular", "camera", "fone de ouvido", "monitor"]
 
-prod = input('Digite o nome do produto: ').upper()
+prod = input('Digite o nome do produto: ').upper() #Faz com que o texto digitado pelo usuário seja convertido em maiúsculo antes de ser salvo na variável.
 
 if prod in produtos:
     print('Este produto já está cadastrado!')
