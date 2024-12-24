@@ -17,3 +17,4 @@ for i, item in enumerate(produtos):
     if vendas2020[i] > vendas2019[i]:
          aument = ((vendas2020[i] - vendas2019[i]) / vendas2019[i]) * 100      #Calculando a porcentagem de aumento > porcentagem_aumento = ((novo_valor - valor_inicial) / valor_inicial) * 100
          print('O produto {} teve crescimento {:.2f}% de vendas de 2019 para 2020' .format(produtos[i], aument))
+ 
