@@ -9,11 +9,12 @@ print('Média salarial: R${:.2f}'.format(media_sal))
 
 for i in range(len(idades)):
     idade_maior = sum(1 for age in idades if age > 25)
-    resul_final = sum(1 for sal in salarios if salarios[i] < media_sal)
-
-print('{}'.format(resul_final))
+    
 print('Funcionários com mais de 25: {}'.format(idade_maior))
 
+for i, func in enumerate(idades):
+    sal_inf = sum(1 for sal in salarios[i] < media_sal and idades[i] > 25)
+print(sal_inf)
 
 
 
