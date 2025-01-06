@@ -12,7 +12,7 @@ print('\n')
 for x in range(2, 6): #Imprime valores médios de 2 a 6 (mas não incluindo 6):
   print(x)
 
-for r in range(2, 30, 3): #Vai imprimir do dois até o 29, incrementando de 3 em 3, pois o último número que define.
+for r in range(2, 30, 3): #Vai imprimir do dois até o 29, incrementando de 3 em 3, pois o último número que define o intervalo.
     print(r)
 
 for x in range(6):
