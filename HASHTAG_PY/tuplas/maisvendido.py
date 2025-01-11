@@ -1,4 +1,4 @@
-#Para saber o total de faturamento geral no dia 21/08
+#Saber qual o produto mais vendido no dia 21/08
 vendas = [
     ('20/08/2020', 'iphone x', 'azul', '128gb', 350, 4000),
     ('20/08/2020', 'iphone x', 'prata', '128gb', 1500, 4000),
@@ -10,10 +10,14 @@ vendas = [
     ('21/08/2020', 'ipad', 'prata', '128gb', 4000, 5000),
 ]
 
-faturamento = 0
+qnt_mais_vend = 0
+nome_mais_vend = ''
+
 for item in vendas:
     data, nome_prod, cor, armazen, qnt_vend, preco = item
-    if data == '21/08/2020' and nome_prod == 'iphone x': 
-        faturamento += qnt_vend * preco 
+    if data == '21/08/2020':
+        if qnt_vend > qnt_mais_vend:
+            qnt_mais_vend = qnt_vend
+            nome_mais_vend = nome_prod
 
-print('A quantidade de vendas do dia 21/08/2020 foi de {}' .format(faturamento))
+print('{} foi o produto mais vendido com {} unidades.'.format(nome_mais_vend, qnt_mais_vend))
