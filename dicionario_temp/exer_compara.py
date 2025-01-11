@@ -22,5 +22,8 @@ for i in range(len(list22)):
         aument = list23[i][1] - list22[i][1]
         print('O mês de {} foi melhor em 2023. Teve um crescimento de {:.1f}%, e um aumento nas vendas de {:.2f} reais em relação a 2022.' .format(list23[i][0], porcent, aument))
         i += 1
+    else:
+        maisvendas = list22[i][1] - list23[i][1]
+        print('O mês de {} foi melhor em 2022 com R${} a mais em vendas.' .format(list22[i][0], maisvendas))
 
 
