@@ -8,9 +8,13 @@ vendas = [
     ('Alon', 7870),
 ]
 
-for vendedor, qnt in vendas:
-    if qnt > meta:
-        print('{}' .format(qnt))
-    
+nome = ''
+qnt_venda = 0
 
+for item in vendas:
+    nome_v, venda = item
+    if venda > meta:
+        qnt_venda = venda
+        nome = nome_v
+        print('O vendedor {} bateu a meta com R${} em vendas.' .format(nome, qnt_venda)) 
 
