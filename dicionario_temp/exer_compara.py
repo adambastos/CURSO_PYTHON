@@ -12,8 +12,6 @@ vendas_23 = {"jan": 17000, "fev": 15000, "mar": 17500, "abr": 16900, "mai": 1600
 list23 = list(vendas_23.items())
 list22 = list(vendas_22.items())
 
-
-
 i = 0
 
 for i in range(len(list22)):
