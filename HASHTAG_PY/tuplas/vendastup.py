@@ -1,4 +1,12 @@
-meta = 10000
+def bateumeta(vendas):
+    meta = 10000
+    bateram_eta = []
+    for venda in vendas:
+        nome, valor = venda
+        if valor > meta:
+            bateram_eta.append({"nome": nome, "valor": valor})
+    return bateram_eta
+     
 vendas = [
     ('João', 15000),
     ('Julia', 27000),
@@ -8,13 +16,10 @@ vendas = [
     ('Alon', 7870),
 ]
 
-nome = ''
-qnt_venda = 0
+resultado = bateumeta(vendas)
 
-for item in vendas:
-    nome_v, venda = item
-    if venda > meta:
-        qnt_venda = venda
-        nome = nome_v
-        print('O vendedor {} bateu a meta com R${} em vendas.' .format(nome, qnt_venda)) 
+for vendedor in resultado:
+    print('{} bateu a meta com R${} em vendas.' .format(vendedor['nome'], vendedor['valor']))
+
+
 
